@@ -14,8 +14,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.missesdirias.R
 import com.example.missesdirias.ui.theme.Bege
-import com.example.missesdirias.ui.theme.Branco
-import com.example.missesdirias.ui.theme.Vermelho
+import com.example.missesdirias.ui.theme.VermelhoSangue
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -25,15 +24,15 @@ fun ListaTarefas(
     Scaffold (
         topBar = {
             TopAppBar(
-                title = { Text(text = "Missões", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = Branco) },
-                backgroundColor = Vermelho
+                title = { Text(text = "Missões", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = Bege) },
+                backgroundColor = VermelhoSangue
             )
         },
         backgroundColor = Bege,
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {navController.navigate("SalvarTarefa")},
-                backgroundColor = Vermelho) {
+                backgroundColor = VermelhoSangue) {
                 Image(
                     imageVector = ImageVector.vectorResource(id = R.drawable.ic_add),
                     contentDescription = "Ícone de Adicionar Missão!"
